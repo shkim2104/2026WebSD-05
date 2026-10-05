@@ -16,8 +16,8 @@ public class RestaurantController {
     @PostMapping public ResponseEntity<RestaurantResponse> create(@RequestBody RestaurantRequest request) {
         return ResponseEntity.status(HttpStatus.CREATED).body(restaurantService.create(request));
     }
-    @GetMapping public List<RestaurantResponse> findAll() {
-        return restaurantService.findAll();
+    @GetMapping public List<RestaurantResponse> findAll(@RequestParam(required = false) String category) {
+        return category == null ? restaurantService.findAll() : restaurantService.findByCategory(category);
     }
     @GetMapping("/{id}") public RestaurantResponse findById(@PathVariable Long id) {
         return restaurantService.findById(id);
