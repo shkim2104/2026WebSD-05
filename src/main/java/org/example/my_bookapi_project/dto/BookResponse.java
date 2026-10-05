@@ -1,4 +1,5 @@
 package org.example.my_bookapi_project.dto;
 
-public class BookResponse {
-}
+package com.webservice.week04.dto;
+
+public record BookResponse(Long id, String title, String author, int price) {}
