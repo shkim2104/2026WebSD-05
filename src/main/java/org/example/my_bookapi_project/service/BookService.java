@@ -1,8 +1,8 @@
 package org.example.my_bookapi_project.service;
 
-import com.webservice.week04.domain.Book;
-import com.webservice.week04.dto.*;
-import com.webservice.week04.repository.BookRepository;
+import org.example.my_bookapi_project.domain.Book;
+import org.example.my_bookapi_project.dto.*;
+import org.example.my_bookapi_project.repository.BookRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;

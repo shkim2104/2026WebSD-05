@@ -1,6 +1,7 @@
 package org.example.my_bookapi_project.repository;
 
-import com.webservice.week04.domain.Book;
+import org.example.my_bookapi_project.domain.Book;
+
 import java.util.List;
 import java.util.Optional;
 

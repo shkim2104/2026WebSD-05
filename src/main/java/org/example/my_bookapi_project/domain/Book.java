@@ -1,6 +1,7 @@
 package org.example.my_bookapi_project.domain;
 
-public class Book { private Long id;
+public class Book {
+    private Long id;
     private String title;
     private String author;
     private int price;
